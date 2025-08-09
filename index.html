@@ -1,71 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🚫 Site Disabled</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Olamide Olorunfemi - Digital Marketing Strategist</title>
+    <meta http-equiv="refresh" content="0; url=CLIENT PORTFOLIO/index.html">
+    <link rel="canonical" href="CLIENT PORTFOLIO/index.html">
     <style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        min-height: 100vh;
-        background: #111827;
-        color: #f3f4f6;
-        font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-      }
-      .container {
-        width: 100vw;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 2rem;
-      }
-      .title {
-        color: #ef4444;
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin-bottom: 1.5rem;
-        letter-spacing: 0.01em;
-      }
-      .message {
-        font-size: 1.25rem;
-        color: #f3f4f6;
-        margin-bottom: 2.5rem;
-        font-weight: 500;
-      }
-      .contact {
-        font-size: 1.1rem;
-        color: #d1d5db;
-        margin-bottom: 0.5rem;
-      }
-      .contact strong {
-        color: #f87171;
-        font-weight: 600;
-      }
-      @media (max-width: 600px) {
-        .title { font-size: 2rem; }
-        .message { font-size: 1rem; }
-        .contact { font-size: 0.98rem; }
-      }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #0a0a1a;
+            color: #f3f4f6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .redirect-container {
+            max-width: 500px;
+            padding: 2rem;
+        }
+        .loading {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .fallback-link {
+            color: #6366f1;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .fallback-link:hover {
+            text-decoration: underline;
+        }
     </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="title">🚫 Site Disabled</div>
-      <div class="message">This website is currently unavailable. Payment has not been received.</div>
-      <div class="contact"><strong>Email:</strong> olabisisamuelayomide@gmail.com</div>
-      <div class="contact"><strong>Phone:</strong> +2347075199868</div>
+</head>
+<body>
+    <div class="redirect-container">
+        <div class="loading">Redirecting to portfolio...</div>
+        <p>If you are not redirected automatically, <a href="CLIENT PORTFOLIO/index.html" class="fallback-link">click here to access the portfolio</a>.</p>
     </div>
-  </body>
+    
+    <script>
+        // Immediate redirect for browsers that don't support meta refresh
+        window.location.href = "CLIENT PORTFOLIO/index.html";
+    </script>
+</body>
 </html>
