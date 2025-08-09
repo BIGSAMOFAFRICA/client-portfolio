@@ -144,6 +144,17 @@
     .resume-fixed:hover::after {
       opacity: 1;
     }
+    
+    /* Placeholder images */
+    .placeholder-img {
+      background: linear-gradient(45deg, #6366f1, #8b5cf6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+    }
   </style>
 </head>
 <body class="bg-[#0a0a1a] text-slate-100 transition-bg">
@@ -177,12 +188,14 @@
     <div class="relative z-10 flex flex-col md:flex-row items-center gap-14 max-w-6xl mx-auto px-6 py-24">
       <!-- Profile Image -->
       <div class="flex-shrink-0 flex items-center justify-center w-50 h-50 md:w-64 md:h-65 rounded-full overflow-hidden bg-slate-200 dark:bg-slate-800" id="hero-img">
-        <img src="../images/CLIENT1.jpg" alt="Olamide Olorunfemi" class="w-full h-full object-cover"/>
+        <div class="placeholder-img w-full h-full rounded-full">
+          Profile Image
+        </div>
       </div>
       <div class="text-center md:text-left" id="hero-text">
         <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">Olamide Olorunfemi</h1>
         <h2 class="text-2xl md:text-3xl font-semibold text-indigo-400 mb-6 tracking-wide">Social Media Manager | Specialist</h2>
-        <p class="text-lg md:text-xl text-slate-200/90 mb-8 max-w-xl mx-auto md:mx-0">This portfolio provides a curated overview of my <br> professional experience and expertise in <br> administrative social media Strategist | Manager, my skill set, and what makes me stand out from other professionals in the field.</p>
+        <p class="text-lg md:text-xl text-slate-200/90 mb-8 max-w-xl mx-auto md:mx-0">This portfolio provides a curated overview of my professional experience and expertise in administrative social media Strategist | Manager, my skill set, and what makes me stand out from other professionals in the field.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
           <a href="#contact" id="cta-btn" class="inline-block px-8 py-3 bg-indigo-600 text-white font-bold rounded-full shadow hover:bg-indigo-700 transition-all duration-200 text-lg">Hire Me</a>
           <!-- FIXED RESUME BUTTON -->
@@ -230,12 +243,16 @@
     <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 text-center">Certifications & Training</h3>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
       <div class="classic-card p-5 sm:p-6 rounded-xl flex flex-col gap-2">
-        <img src="../images/certificate.jpg" alt="Digital Marketing Certificate" class="w-full h-40 object-contain mb-2 self-center"/>
+        <div class="placeholder-img w-full h-40 rounded-lg mb-2 self-center">
+          Certificate Image
+        </div>
         <div class="font-semibold text-base sm:text-lg text-indigo-700 dark:text-indigo-400">Digital Marketing</div>
         <div class="text-slate-500 dark:text-slate-300 text-sm sm:text-base">Labano Academy</div>
       </div>
       <div class="classic-card p-5 sm:p-6 rounded-xl flex flex-col gap-2">
-        <img src="../images/CLIENT1.jpg" alt="Social Media Specialist Certificate" class="w-16 h-16 object-contain mb-2 self-center"/>
+        <div class="placeholder-img w-16 h-16 rounded-full mb-2 self-center">
+          Cert
+        </div>
         <div class="font-semibold text-base sm:text-lg text-indigo-700 dark:text-indigo-400">Social Media Specialist</div>
         <div class="text-slate-500 dark:text-slate-300 text-sm sm:text-base">Olydigital Marketing Agency</div>
       </div>
@@ -294,22 +311,30 @@
     <h3 class="text-4xl md:text-5xl font-bold mb-14 text-center">Graphic Design Projects</h3>
     <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-10" id="graphic-design-cards">
       <div class="bg-white/80 dark:bg-slate-900 border border-slate-200/10 card-hover rounded-xl shadow-xl p-8 flex flex-col items-center transform transition-all duration-300 hover:scale-105" tabindex="0">
-        <img src="../images/donah.jpg" alt="Donahtech Software Design" class="w-full h-80 md:h-96 object-cover rounded-lg mb-6 shadow-lg"/>
+        <div class="placeholder-img w-full h-80 md:h-96 rounded-lg mb-6 shadow-lg">
+          Donahtech Software Design
+        </div>
         <h4 class="font-semibold text-xl mb-3 text-center">Donahtech Software</h4>
         <p class="text-slate-500 dark:text-slate-300 text-center mb-4 text-base">Branding and promotional graphics for a software product development company.</p>
       </div>
       <div class="bg-white/80 dark:bg-slate-900 border border-slate-200/10 card-hover rounded-xl shadow-xl p-8 flex flex-col items-center transform transition-all duration-300 hover:scale-105" tabindex="0">
-        <img src="../images/simplii.jpg" alt="Simplii Exchange Design" class="w-full h-80 md:h-96 object-cover rounded-lg mb-6 shadow-lg"/>
+        <div class="placeholder-img w-full h-80 md:h-96 rounded-lg mb-6 shadow-lg">
+          Simplii Exchange Design
+        </div>
         <h4 class="font-semibold text-xl mb-3 text-center">Simplii Exchange</h4>
         <p class="text-slate-500 dark:text-slate-300 text-center mb-4 text-base">Social media and ad creatives for a currency swap and tuition payment platform.</p>
       </div>
       <div class="bg-white/80 dark:bg-slate-900 border border-slate-200/10 card-hover rounded-xl shadow-xl p-8 flex flex-col items-center transform transition-all duration-300 hover:scale-105" tabindex="0">
-        <img src="../images/mapel.jpg" alt="MapleCompass Design" class="w-full h-80 md:h-96 object-cover rounded-lg mb-6 shadow-lg"/>
+        <div class="placeholder-img w-full h-80 md:h-96 rounded-lg mb-6 shadow-lg">
+          MapleCompass Design
+        </div>
         <h4 class="font-semibold text-xl mb-3 text-center">MapleCompass</h4>
         <p class="text-slate-500 dark:text-slate-300 text-center mb-4 text-base">Graphics for visa application agent campaigns and Instagram ads.</p>
       </div>
       <div class="bg-white/80 dark:bg-slate-900 border border-slate-200/10 card-hover rounded-xl shadow-xl p-8 flex flex-col items-center transform transition-all duration-300 hover:scale-105" tabindex="0">
-        <img src="../images/express.jpg" alt="Chistom Express Design" class="w-full h-80 md:h-96 object-cover rounded-lg mb-6 shadow-lg"/>
+        <div class="placeholder-img w-full h-80 md:h-96 rounded-lg mb-6 shadow-lg">
+          Chistom Express Design
+        </div>
         <h4 class="font-semibold text-xl mb-3 text-center">Chistom Express</h4>
         <p class="text-slate-500 dark:text-slate-300 text-center mb-4 text-base">Delivery and logistics site graphics for Chistom Express.</p>
       </div>
@@ -321,71 +346,105 @@
     <h3 class="text-4xl md:text-5xl font-bold mb-14 text-center">Result Ads</h3>
     <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-8" id="result-ads-cards">
       <div class="flex flex-col items-center">
-        <img src="../images/result1.jpg" alt="Result Ad 1" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          Result Ad 1
+        </div>
         <span class="text-sm text-slate-500 mt-1">Ad Result 1</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../images/result2.jpg" alt="Result Ad 2" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          Result Ad 2
+        </div>
         <span class="text-sm text-slate-500 mt-1">Ad Result 2</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../images/result3.jpg" alt="Result Ad 3" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          Result Ad 3
+        </div>
         <span class="text-sm text-slate-500 mt-1">Ad Result 3</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../images/result4.jpg" alt="Result Ad 4" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          Result Ad 4
+        </div>
         <span class="text-sm text-slate-500 mt-1">Ad Result 4</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../images/result5.jpg" alt="Result Ad 5" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          Result Ad 5
+        </div>
         <span class="text-sm text-slate-500 mt-1">Ad Result 5</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../images/result6.jpg" alt="Result Ad 6" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          Result Ad 6
+        </div>
         <span class="text-sm text-slate-500 mt-1">Ad Result 6</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../images/result7.jpg" alt="Result Ad 7" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          Result Ad 7
+        </div>
         <span class="text-sm text-slate-500 mt-1">Ad Result 7</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../results/WhatsApp%20Image%202025-08-07%20at%2015.55.26_70628208.jpg" alt="Result Ad 8" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          Result Ad 8
+        </div>
         <span class="text-sm text-slate-500 mt-1">Ad Result 8</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../results/WhatsApp%20Image%202025-08-07%20at%2015.57.28_5e9fced2.jpg" alt="Result Ad 9" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          Result Ad 9
+        </div>
         <span class="text-sm text-slate-500 mt-1">Ad Result 9</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../results/WhatsApp%20Image%202025-08-07%20at%2015.57.30_3b5ec092.jpg" alt="Result Ad 10" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          Result Ad 10
+        </div>
         <span class="text-sm text-slate-500 mt-1">Ad Result 10</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../results/WhatsApp%20Image%202025-08-07%20at%2015.57.31_06dacb61.jpg" alt="Result Ad 11" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          Result Ad 11
+        </div>
         <span class="text-sm text-slate-500 mt-1">Ad Result 11</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../results/WhatsApp%20Image%202025-08-07%20at%2015.57.31_28d12bd8.jpg" alt="Result Ad 12" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          Result Ad 12
+        </div>
         <span class="text-sm text-slate-500 mt-1">Ad Result 12</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../results/WhatsApp%20Image%202025-08-07%20at%2015.58.15_2957e152.jpg" alt="Result Ad 13" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          Result Ad 13
+        </div>
         <span class="text-sm text-slate-500 mt-1">Ad Result 13</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../results/WhatsApp%20Image%202025-08-07%20at%2015.58.15_b3805a72.jpg" alt="Result Ad 14" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          Result Ad 14
+        </div>
         <span class="text-sm text-slate-500 mt-1">Ad Result 14</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../results/WhatsApp%20Image%202025-08-07%20at%2015.58.19_4804545d.jpg" alt="Result Ad 15" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          Result Ad 15
+        </div>
         <span class="text-sm text-slate-500 mt-1">Ad Result 15</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../results/WhatsApp%20Image%202025-08-07%20at%2015.58.19_bc4c7239.jpg" alt="Result Ad 16" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          Result Ad 16
+        </div>
         <span class="text-sm text-slate-500 mt-1">Ad Result 16</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../results/WhatsApp%20Image%202025-08-07%20at%2015.58.22_c448bf40.jpg" alt="Result Ad 17" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          Result Ad 17
+        </div>
         <span class="text-sm text-slate-500 mt-1">Ad Result 17</span>
       </div>
     </div>
@@ -396,31 +455,45 @@
     <h3 class="text-4xl md:text-5xl font-bold mb-14 text-center">Paid Advertisement Projects</h3>
     <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-8" id="paid-ads-cards">
       <div class="flex flex-col items-center">
-        <img src="../images/result1.jpg" alt="Donahtech Software Ad" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          Donahtech Software Ad
+        </div>
         <span class="text-sm text-slate-500 mt-1">Donahtech Software Ad</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../images/result2.jpg" alt="Simplii Exchange Ad" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          Simplii Exchange Ad
+        </div>
         <span class="text-sm text-slate-500 mt-1">Simplii Exchange Ad</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../images/result3.jpg" alt="MapleCompass Ad" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          MapleCompass Ad
+        </div>
         <span class="text-sm text-slate-500 mt-1">MapleCompass Ad</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../images/result4.jpg" alt="Chistom Express Ad" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          Chistom Express Ad
+        </div>
         <span class="text-sm text-slate-500 mt-1">Chistom Express Ad</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../images/result5.jpg" alt="Stylar Outfits Ad" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          Stylar Outfits Ad
+        </div>
         <span class="text-sm text-slate-500 mt-1">Stylar Outfits Ad</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../images/result6.jpg" alt="Nigerian College of Agribusiness Ad" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          Nigerian College Ad
+        </div>
         <span class="text-sm text-slate-500 mt-1">Nigerian College of Agribusiness Ad</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../images/result7.jpg" alt="General Campaign Ad" class="w-full h-48 object-cover rounded-lg shadow mb-2"/>
+        <div class="placeholder-img w-full h-48 rounded-lg shadow mb-2">
+          General Campaign Ad
+        </div>
         <span class="text-sm text-slate-500 mt-1">General Campaign Ad</span>
       </div>
     </div>
@@ -431,15 +504,11 @@
     <h3 class="text-4xl md:text-5xl font-bold mb-10 text-center">Featured Work</h3>
     <p class="text-lg text-slate-300 mb-10 text-center">Watch real client success stories and results from my digital marketing campaigns</p>
     <div class="flex justify-center">
-      <video 
-        class="w-full max-w-3xl rounded-xl shadow-2xl border border-slate-200/20 bg-slate-900"
-        controls
-        poster="../images/project1.jpg"
-        preload="metadata"
-      >
-        <source src="../images/video.mp4" type="video/mp4">
-        Your browser does not support the video tag. Please <a href="../images/video.mp4" class="text-indigo-600 underline">download the video here</a>.
-      </video>
+      <div class="w-full max-w-3xl rounded-xl shadow-2xl border border-slate-200/20 bg-slate-900 h-96 flex items-center justify-center">
+        <div class="placeholder-img w-full h-full rounded-xl">
+          Video Showcase
+        </div>
+      </div>
     </div>
     <div class="mt-6 text-center">
       <p class="text-slate-400 text-sm">Client testimonials and campaign results showcase</p>
@@ -500,49 +569,65 @@
     <h3 class="text-4xl md:text-5xl font-bold mb-14 text-center">Projects</h3>
     <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10" id="projects-cards">
       <div class="bg-white/80 dark:bg-slate-900 border border-slate-200/10 card-hover rounded-xl shadow-xl p-6 flex flex-col items-center" tabindex="0">
-        <img src="../images/project2.jpg" alt="Logistic Services" class="w-full h-40 object-cover rounded-lg mb-4 shadow-md"/>
+        <div class="placeholder-img w-full h-40 rounded-lg mb-4 shadow-md">
+          Logistic Services
+        </div>
         <h4 class="font-semibold text-lg mb-2">Logistic Services</h4>
         <p class="text-slate-500 dark:text-slate-300 text-center mb-2 text-sm">Drove a 35% increase in inquiries from shipping services to the USA, Europe, and Canada by optimizing social media platforms and targeted campaigns.</p>
         <span class="text-indigo-600 font-medium text-xs">Result: +35% Inquiries</span>
       </div>
       <div class="bg-white/80 dark:bg-slate-900 border border-slate-200/10 card-hover rounded-xl shadow-xl p-6 flex flex-col items-center" tabindex="0">
-        <img src="../images/project1.jpg" alt="Nigerian College of Agribusiness" class="w-full h-40 object-cover rounded-lg mb-4 shadow-md"/>
+        <div class="placeholder-img w-full h-40 rounded-lg mb-4 shadow-md">
+          Nigerian College
+        </div>
         <h4 class="font-semibold text-lg mb-2">Nigerian College of Agribusiness</h4>
         <p class="text-slate-500 dark:text-slate-300 text-center mb-2 text-sm">Executed an awareness ad campaign that significantly increased brand visibility, resulting in a 50% increase in website traffic and a 30% growth in online engagement for the Nigerian College of Agribusiness.</p>
         <span class="text-indigo-600 font-medium text-xs">Result: +50% Website Traffic, +30% Engagement</span>
       </div>
       <div class="bg-white/80 dark:bg-slate-900 border border-slate-200/10 card-hover rounded-xl shadow-xl p-6 flex flex-col items-center" tabindex="0">
-        <img src="../images/project3.jpg" alt="Stylar Outfits" class="w-full h-40 object-cover rounded-lg mb-4 shadow-md"/>
+        <div class="placeholder-img w-full h-40 rounded-lg mb-4 shadow-md">
+          Stylar Outfits
+        </div>
         <h4 class="font-semibold text-lg mb-2">Stylar Outfits</h4>
         <p class="text-slate-500 dark:text-slate-300 text-center mb-2 text-sm">Launched a demographic-targeted awareness ad campaign for Stylar Outfits, a clothing brand, significantly boosting brand recognition and audience engagement.</p>
         <span class="text-indigo-600 font-medium text-xs">Result: Awareness Ad Success</span>
       </div>
       <div class="bg-white/80 dark:bg-slate-900 border border-slate-200/10 card-hover rounded-xl shadow-xl p-6 flex flex-col items-center" tabindex="0">
-        <img src="../images/project5.jpg" alt="Simplii Exchange" class="w-full h-40 object-cover rounded-lg mb-4 shadow-md"/>
+        <div class="placeholder-img w-full h-40 rounded-lg mb-4 shadow-md">
+          Simplii Exchange
+        </div>
         <h4 class="font-semibold text-lg mb-2">Simplii Exchange</h4>
         <p class="text-slate-500 dark:text-slate-300 text-center mb-2 text-sm">Ran Instagram ad campaigns for Simplii Exchange, a platform for currency swaps and paying tuition abroad, driving increased awareness and customer inquiries.</p>
         <span class="text-indigo-600 font-medium text-xs">Result: Instagram Ad Success</span>
       </div>
       <div class="bg-white/80 dark:bg-slate-900 border border-slate-200/10 card-hover rounded-xl shadow-xl p-6 flex flex-col items-center" tabindex="0">
-        <img src="../images/simplii.jpg" alt="Simplii Exchange" class="w-full h-40 object-cover rounded-lg mb-4 shadow-md"/>
+        <div class="placeholder-img w-full h-40 rounded-lg mb-4 shadow-md">
+          Simplii Exchange
+        </div>
         <h4 class="font-semibold text-lg mb-2">Simplii Exchange</h4>
         <p class="text-slate-500 dark:text-slate-300 text-center mb-2 text-sm">Ran Instagram ad campaigns for Simplii Exchange, a platform for currency swaps and paying tuition abroad, driving increased awareness and customer inquiries.</p>
         <span class="text-indigo-600 font-medium text-xs">Result: Instagram Ad Success</span>
       </div>
       <div class="bg-white/80 dark:bg-slate-900 border border-slate-200/10 card-hover rounded-xl shadow-xl p-6 flex flex-col items-center" tabindex="0">
-        <img src="../images/mapel.jpg" alt="MapleCompass" class="w-full h-40 object-cover rounded-lg mb-4 shadow-md"/>
+        <div class="placeholder-img w-full h-40 rounded-lg mb-4 shadow-md">
+          MapleCompass
+        </div>
         <h4 class="font-semibold text-lg mb-2">MapleCompass</h4>
         <p class="text-slate-500 dark:text-slate-300 text-center mb-2 text-sm">Promoted MapleCompass, an agent for visa applications, by running Instagram ad campaigns to increase brand awareness and attract new clients.</p>
         <span class="text-indigo-600 font-medium text-xs">Result: Instagram Ad Success</span>
       </div>
       <div class="bg-white/80 dark:bg-slate-900 border border-slate-200/10 card-hover rounded-xl shadow-xl p-6 flex flex-col items-center" tabindex="0">
-        <img src="../images/donah.jpg" alt="Donahtech Software" class="w-full h-40 object-cover rounded-lg mb-4 shadow-md"/>
+        <div class="placeholder-img w-full h-40 rounded-lg mb-4 shadow-md">
+          Donahtech Software
+        </div>
         <h4 class="font-semibold text-lg mb-2">Donahtech Software</h4>
         <p class="text-slate-500 dark:text-slate-300 text-center mb-2 text-sm">Ran Instagram ad campaigns for Donahtech Software, a software product development company, to increase product awareness and attract new clients.</p>
         <span class="text-indigo-600 font-medium text-xs">Result: Instagram Ad Success</span>
       </div>
       <div class="bg-white/80 dark:bg-slate-900 border border-slate-200/10 card-hover rounded-xl shadow-xl p-6 flex flex-col items-center" tabindex="0">
-        <img src="../images/cynosure.jpg" alt="Cynosure" class="w-16 h-16 object-cover rounded-full mb-4 self-center"/>
+        <div class="placeholder-img w-16 h-16 rounded-full mb-4 self-center">
+          Cynosure
+        </div>
         <div class="mb-2 text-indigo-700 dark:text-indigo-400 font-semibold text-base sm:text-lg">CLIENT: Cynosure</div>
         <div class="mb-2 text-slate-500 dark:text-slate-300 text-xs sm:text-sm">SERVICES PROVIDED: Social Media Management, Strategy Development</div>
         <div class="mb-2 text-slate-700 dark:text-slate-200 text-sm sm:text-base">OUTCOME: Achieved a 35% increase in social media connections and improved post engagement by 40%.</div>
@@ -556,28 +641,36 @@
     <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-10 sm:mb-14 text-center">Work Experience</h3>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
       <div class="classic-card p-6 sm:p-8 rounded-xl shadow flex flex-col h-full">
-        <img src="../images/testimonial1.jpg" alt="Cecilia" class="w-16 h-16 object-cover rounded-full mb-4 self-center"/>
+        <div class="placeholder-img w-16 h-16 rounded-full mb-4 self-center">
+          Cecilia
+        </div>
         <div class="mb-2 text-indigo-700 dark:text-indigo-400 font-semibold text-base sm:text-lg">CLIENT: Cecilia</div>
         <div class="mb-2 text-slate-500 dark:text-slate-300 text-xs sm:text-sm">SERVICES PROVIDED: Social Media Management, Ads, Graphic Design</div>
         <div class="mb-2 text-slate-700 dark:text-slate-200 text-sm sm:text-base">OUTCOME: Ensured 100% accuracy in social media platforms to promote logistics services, driving a 35% increase in inquiries from shipping services to the USA, Europe, and Canada.</div>
         <div class="classic-quote mt-4 text-xs sm:text-sm">"Olorunfemi Olamide's strategy was really top notch, helped us reach our target audience and generate sales. He kept everything on track and organized."</div>
       </div>
       <div class="classic-card p-6 sm:p-8 rounded-xl shadow flex flex-col h-full">
-        <img src="../images/project1.jpg" alt="Nigerian College of Agribusiness" class="w-16 h-16 object-cover rounded-full mb-4 self-center"/>
+        <div class="placeholder-img w-16 h-16 rounded-full mb-4 self-center">
+          Nigerian College
+        </div>
         <div class="mb-2 text-indigo-700 dark:text-indigo-400 font-semibold text-base sm:text-lg">COMPANY: Nigerian College of Agribusiness</div>
         <div class="mb-2 text-slate-500 dark:text-slate-300 text-xs sm:text-sm">SERVICES PROVIDED: Digital Marketing, Graphic Design</div>
         <div class="mb-2 text-slate-700 dark:text-slate-200 text-sm sm:text-base">OUTCOME: Directed the company's digital marketing strategies, achieving a 50% increase in website traffic and a 30% growth in online engagement.</div>
         <div class="classic-quote mt-4 text-xs sm:text-sm">"Olorunfemi Olamide helped us double our social media engagement in just a few months. The content was exactly what we needed and their strategy was spot on."</div>
       </div>
       <div class="classic-card p-6 sm:p-8 rounded-xl shadow flex flex-col h-full">
-        <img src="../images/donah.jpg" alt="Donah App" class="w-16 h-16 object-cover rounded-full mb-4 self-center"/>
+        <div class="placeholder-img w-16 h-16 rounded-full mb-4 self-center">
+          Donah App
+        </div>
         <div class="mb-2 text-indigo-700 dark:text-indigo-400 font-semibold text-base sm:text-lg">CLIENT: Donah App</div>
         <div class="mb-2 text-slate-500 dark:text-slate-300 text-xs sm:text-sm">SERVICES PROVIDED: UI/UX Design, App Branding, Social Media Graphics</div>
         <div class="mb-2 text-slate-700 dark:text-slate-200 text-sm sm:text-base">OUTCOME: Developed a cohesive brand identity and engaging app interface, resulting in increased user engagement and positive feedback from early adopters.</div>
         <div class="classic-quote mt-4 text-xs sm:text-sm">"Olamide Olorunfemi delivered a visually stunning and user-friendly app design that exceeded our expectations."</div>
       </div>
       <div class="classic-card p-6 sm:p-8 rounded-xl shadow flex flex-col h-full">
-        <img src="../images/cynosure.jpg" alt="Cynosure" class="w-16 h-16 object-cover rounded-full mb-4 self-center"/>
+        <div class="placeholder-img w-16 h-16 rounded-full mb-4 self-center">
+          Cynosure
+        </div>
         <div class="mb-2 text-indigo-700 dark:text-indigo-400 font-semibold text-base sm:text-lg">CLIENT: Cynosure</div>
         <div class="mb-2 text-slate-500 dark:text-slate-300 text-xs sm:text-sm">SERVICES PROVIDED: Social Media Management, Strategy Development</div>
         <div class="mb-2 text-slate-700 dark:text-slate-200 text-sm sm:text-base">OUTCOME: Achieved a 35% increase in social media connections and improved post engagement by 40%.</div>
@@ -606,7 +699,9 @@
         <div class="bg-white/80 dark:bg-slate-900 border border-slate-200/10 card-hover p-8 rounded-xl shadow-xl flex flex-col h-full transform transition-all duration-300 hover:scale-105">
           <p class="text-slate-700 dark:text-slate-200 mb-6 flex-1 text-lg">"Olamide Olorunfemi is a consummate professional. His digital marketing strategies took our business to the next level and delivered real, measurable results."</p>
           <div class="flex items-center gap-4 mt-auto">
-            <img src="../images/testimonial1.jpg" alt="Cecilia Niretiayo" class="w-16 h-16 rounded-full object-cover border border-slate-200 shadow-lg"/>
+            <div class="placeholder-img w-16 h-16 rounded-full border border-slate-200 shadow-lg">
+              Cecilia
+            </div>
             <div>
               <div class="font-semibold text-indigo-600 dark:text-indigo-400 text-lg">Cecilia Niretiayo</div>
               <div class="text-base text-slate-500 dark:text-slate-400">Business Owner</div>
@@ -617,7 +712,9 @@
         <div class="bg-white/80 dark:bg-slate-900 border border-slate-200/10 card-hover p-8 rounded-xl shadow-xl flex flex-col h-full transform transition-all duration-300 hover:scale-105">
           <p class="text-slate-700 dark:text-slate-200 mb-6 flex-1 text-lg">"Olamide Olorunfemi's expertise in Google Ads and social media management helped us double our leads in just a few months. Highly recommended!"</p>
           <div class="flex items-center gap-4 mt-auto">
-            <img src="../images/Samuel.jpg" alt="Samuel Oluwabukunmi Akanji" class="w-16 h-16 rounded-full object-cover border border-slate-200 shadow-lg"/>
+            <div class="placeholder-img w-16 h-16 rounded-full border border-slate-200 shadow-lg">
+              Samuel
+            </div>
             <div>
               <div class="font-semibold text-indigo-600 dark:text-indigo-400 text-lg">Samuel Oluwabukunmi Akanji</div>
               <div class="text-base text-slate-500 dark:text-slate-400">E-commerce Manager</div>
@@ -628,7 +725,9 @@
         <div class="bg-white/80 dark:bg-slate-900 border border-slate-200/10 card-hover p-8 rounded-xl shadow-xl flex flex-col h-full transform transition-all duration-300 hover:scale-105">
           <p class="text-slate-700 dark:text-slate-200 mb-6 flex-1 text-lg">"Olamide Olorunfemi's insights and strategic approach to digital marketing have been invaluable to our clinic's growth and online reputation."</p>
           <div class="flex items-center gap-4 mt-auto">
-            <img src="../images/ayodele.jpg" alt="Dr. Ayodele" class="w-16 h-16 rounded-full object-cover border border-slate-200 shadow-lg"/>
+            <div class="placeholder-img w-16 h-16 rounded-full border border-slate-200 shadow-lg">
+              Dr. Ayodele
+            </div>
             <div>
               <div class="font-semibold text-indigo-600 dark:text-indigo-400 text-lg">Dr. Ayodele</div>
               <div class="text-base text-slate-500 dark:text-slate-400">Clinic Director</div>
@@ -800,7 +899,7 @@
       const downloadLink = document.createElement('a');
       
       // Set the href to the resume file with proper encoding
-      downloadLink.href = 'document/OLORUNFEMI%20EMMAUNEL%20OLAMIDE.pdf';
+      downloadLink.href = 'documents/OLORUNFEMI_OLAMIDE_Resume.pdf';
       
       // Set the download attribute with a safe filename
       downloadLink.download = 'OLORUNFEMI_OLAMIDE_Resume.pdf';
